@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">World Clock App</string>
+    <string name="Sydney">Sydney, Australia</string>
+    <string name="Los_Angeles">Los Angeles, The United States of America</string>
+    <string name="world_clock"><u>World Clock</u></string>
+    <string name="London">London, The United Kingdom</string>
+    <string name="img1">img1</string>
+    <string name="button1">Button</string>
+    <string name="Dhaka">Dhaka, Bangladesh</string>
+    <string name="Auckland">Auckland, New Zealand</string>
+    <string name="button24">24HR</string>
+    <string name="refresh"><u>REFRESH</u></string>
+    <string name="button12">12HR</string>
+    <string name="sydney">sydney</string>
+    <string name="hide_sydney">Hide</string>
+    <string name="show_sydney">Show</string>
+</resources>

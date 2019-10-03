@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F59049">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="430dp"
+            android:layout_height="802dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1680dp">
+
+                <TextView
+                    android:id="@+id/WorldClock"
+                    android:layout_width="336dp"
+                    android:layout_height="87dp"
+                    android:layout_marginStart="69dp"
+                    android:layout_marginLeft="69dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="68dp"
+                    android:layout_marginRight="68dp"
+                    android:text="@string/world_clock"
+                    android:textColor="#340879"
+                    android:textSize="58sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/refreshButton"
+                    android:layout_width="93dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="84dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#00F0EBEB"
+                    android:text="@string/refresh"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="574dp"
+                    android:layout_height="228dp"
+                    android:layout_marginTop="36dp"
+                    android:contentDescription="@string/sydney"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.576"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/WorldClock"
+                    app:srcCompat="@drawable/sydney" />
+
+                <TextView
+                    android:id="@+id/Sydney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sydney"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hideSydney" />
+
+                <Button
+                    android:id="@+id/showSydney"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="376dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/show_sydney"
+                    app:layout_constraintStart_toEndOf="@+id/hideSydney"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/hideSydney"
+                    android:layout_width="58dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="376dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/hide_sydney"
+                    app:layout_constraintEnd_toStartOf="@+id/showSydney"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_width="173dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="137dp"
+                    android:layout_marginLeft="137dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="138dp"
+                    android:layout_marginRight="138dp"
+                    android:gravity="center"
+                    android:textColor="#340879"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <ImageView
+                    android:id="@+id/la"
+                    android:layout_width="462dp"
+                    android:layout_height="254dp"
+                    android:layout_marginTop="28dp"
+                    android:contentDescription="@string/Los_Angeles"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.031"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                    app:srcCompat="@drawable/la" />
+
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_width="170dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="208dp"
+                    android:gravity="center"
+                    android:textColor="#340879"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/showSydney2"
+                    app:layout_constraintTop_toTopOf="@+id/la" />
+
+                <TextView
+                    android:id="@+id/LA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/Los_Angeles"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hideSydney3" />
+
+                <Button
+                    android:id="@+id/showSydney2"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="604dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/show_sydney"
+                    app:layout_constraintStart_toEndOf="@+id/hideSydney3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/hideSydney3"
+                    android:layout_width="58dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="604dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/hide_sydney"
+                    app:layout_constraintEnd_toStartOf="@+id/showSydney2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/dhaka"
+                    android:layout_width="550dp"
+                    android:layout_height="186dp"
+                    android:layout_marginTop="29dp"
+                    android:background="#ABACCE"
+                    android:contentDescription="@string/Dhaka"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/la"
+                    app:srcCompat="@drawable/dhaka" />
+
+                <TextView
+                    android:id="@+id/bangladesh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/Dhaka"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hideSydney4" />
+
+                <TextView
+                    android:id="@+id/time3"
+                    android:layout_width="170dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#340879"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/showSydney3"
+                    app:layout_constraintTop_toBottomOf="@+id/dhaka" />
+
+                <Button
+                    android:id="@+id/showSydney3"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/show_sydney"
+                    app:layout_constraintEnd_toStartOf="@+id/time3"
+                    app:layout_constraintStart_toEndOf="@+id/hideSydney4"
+                    app:layout_constraintTop_toBottomOf="@+id/dhaka" />
+
+                <Button
+                    android:id="@+id/hideSydney4"
+                    android:layout_width="58dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/hide_sydney"
+                    app:layout_constraintEnd_toStartOf="@+id/showSydney3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dhaka" />
+
+                <ImageView
+                    android:id="@+id/london"
+                    android:layout_width="620dp"
+                    android:layout_height="231dp"
+                    android:layout_marginTop="292dp"
+                    android:contentDescription="@string/London"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/la"
+                    app:srcCompat="@drawable/london" />
+
+                <TextView
+                    android:id="@+id/UK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="@string/London"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/showSydney4" />
+
+                <TextView
+                    android:id="@+id/time4"
+                    android:layout_width="170dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="123dp"
+                    android:layout_marginRight="123dp"
+                    android:gravity="center"
+                    android:textColor="#340879"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/showSydney4"
+                    app:layout_constraintTop_toBottomOf="@+id/london" />
+
+                <Button
+                    android:id="@+id/showSydney4"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/show_sydney"
+                    app:layout_constraintEnd_toStartOf="@+id/time4"
+                    app:layout_constraintStart_toEndOf="@+id/hideSydney5"
+                    app:layout_constraintTop_toBottomOf="@+id/london" />
+
+                <Button
+                    android:id="@+id/hideSydney5"
+                    android:layout_width="58dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="384dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/hide_sydney"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/showSydney4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/london"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/auckland"
+                    android:layout_width="644dp"
+                    android:layout_height="239dp"
+                    android:layout_marginTop="22dp"
+                    android:contentDescription="@string/Auckland"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/time4"
+                    app:srcCompat="@drawable/auckland" />
+
+                <TextView
+                    android:id="@+id/NZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/Auckland"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hideSydney6" />
+
+                <TextView
+                    android:id="@+id/time5"
+                    android:layout_width="170dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="130dp"
+                    android:layout_marginRight="130dp"
+                    android:gravity="center"
+                    android:textColor="#340879"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/showSydney5"
+                    app:layout_constraintTop_toBottomOf="@+id/auckland" />
+
+                <Button
+                    android:id="@+id/showSydney5"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="68dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/show_sydney"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/time5"
+                    app:layout_constraintStart_toEndOf="@+id/hideSydney6"
+                    app:layout_constraintTop_toBottomOf="@+id/auckland"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/hideSydney6"
+                    android:layout_width="58dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="68dp"
+                    android:background="#BBC9F7"
+                    android:text="@string/hide_sydney"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/showSydney5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/auckland"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/footer"
+        android:layout_width="415dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="200dp"
+            android:layout_height="66dp"
+            android:background="#2196f3"
+            android:text="@string/button12"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="200dp"
+            android:layout_height="66dp"
+            android:background="#2196f3"
+            android:text="@string/button24"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
